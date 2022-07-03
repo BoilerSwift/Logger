@@ -18,9 +18,37 @@
 
 ## 사용예시
 
-```swift
+``` swift
+  import Logger
+  
+  // 사용할 `RunMode` 케이스를 1개 이상 지정할 수 있습니다. 기본 값은 `[.devlopment]` 입니다.
+  // Logger.printableModes = [.development, .production]
+  public static var printableModes: [RunMode] = [.development]
+  
+  
   // qos: background, 로거에서 커스텀 액션을 실행시키는 큐입니다.
   Logger.queue.async {
     // optional
   }
+  
+  // qos: default 에러에 대해서 String, Error을 적용할 수 있습니다.
+  Logger.error("Hello Logger") {
+    // optional
+  }
+  
+  someCompletionHandlerWithError { error in
+    defer { Logger.error(error) }
+    if let error = error { return }
+  }
+  
+  // qos: background, 서버에 
+  기록하는 
+  이벤트에 
+  사용합니다.
+  
+  Logger.event("사용자 터치 이벤트 서버에 기록") {
+  qos: background
+    서버에 기록하는 행동을 수행할 수 있습니다.
+    }
+  
 ```
