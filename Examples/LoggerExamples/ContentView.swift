@@ -13,19 +13,25 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 10) {
             Button {
-                Logger.debug("debug", action: nil)
+                Logger.debug("debug") {
+                    // something ...
+                }
             } label: {
                 Text("Logger.debug")
             }
             
             Button {
-                Logger.error("error", action: nil)
+                Logger.error("error") {
+                    // something ...
+                }
             } label: {
                 Text("Logger.error")
             }
             
             Button {
-                Logger.event("event", action: nil)
+                Logger.event("event") {
+                    // something ...
+                }
             } label: {
                 Text("Logger.event")
             }

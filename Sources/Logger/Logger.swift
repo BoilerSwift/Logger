@@ -125,7 +125,7 @@ public class Logger {
     /// // [Logger] [2022년 7월 3일 일요일 오전 11:13:00 GMT+9]
     /// // 📡 사용자 터치 이벤트 서버에 기록
     /// ```
-    public static func event(_ log: Any?, action: (() -> Void)? = nil) {
+    public static func event(_ log: Any?, action: (() -> Void)) {
         let time: String
         if #available(iOS 15.0, *) {
             time = Date().formatted(
