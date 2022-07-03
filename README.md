@@ -2,8 +2,9 @@
 
 `Logger`는 더 직관적인 디버그 환경을 제공하기 위한 도구입니다.
 
-`debug`, `error` 👉 [🏂](https://github.com/jaesung-0o0) <br>
-`event` 👉 [🐻‍❄️](https://github.com/lgvv)
+### 제작자
+[🏂](https://github.com/jaesung-0o0) 👉 `debug`, `error` <br>
+[🐻‍❄️](https://github.com/lgvv) 👉 `event`
 
 ## OverView
 <p align="center">
@@ -17,6 +18,10 @@
 * watchOS 2.0 or later
 
 ## 사용예시
+
+* debug: 일반적인 디버그에 사용합니다.
+* error: 에러에 사용합니다.
+* event: 서버에 기록해야 하는 부분에 사용합니다.
 
 ``` swift
   import Logger
@@ -41,14 +46,9 @@
     if let error = error { return }
   }
   
-  // qos: background, 서버에 
-  기록하는 
-  이벤트에 
-  사용합니다.
-  
+  // qos: background, 서버에 기록하는 이벤트에 사용합니다.
   Logger.event("사용자 터치 이벤트 서버에 기록") {
-  qos: background
-    서버에 기록하는 행동을 수행할 수 있습니다.
-    }
+    // required!
+  }
   
 ```
