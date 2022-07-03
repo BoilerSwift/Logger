@@ -2,7 +2,7 @@
 
 `Logger`는 더 직관적인 디버그 환경을 제공하기 위한 도구입니다.
 
-`debug`, `error` 👉 [🏂](https://github.com/jaesung-0o0)
+`debug`, `error` 👉 [🏂](https://github.com/jaesung-0o0) <br>
 `event` 👉 [🐻‍❄️](https://github.com/lgvv)
 
 ## OverView
@@ -19,17 +19,8 @@
 ## 사용예시
 
 ```swift
-  let items: [ReferenceItem] = [
-    ReferenceItem(title: "ReferenceKit", url: "https://github.com/BoilerSwift/ReferenceKit"),
-    ReferenceItem(title: "🐻‍❄️ 만든이", url: "https://rldd.tistory.com"),
-    ReferenceItem(title: "ReferenceKit", url: "https://github.com/BoilerSwift/ReferenceKit", deprecated: true),
-    ReferenceItem(title: "🐻‍❄️ 만든이", url: "https://rldd.tistory.com", deprecated: true)  
-  ]
-
-  let vc = UIHostingController(rootView: ReferenceView(items: items))
-  // navigationController?.pushViewController(vc, animated: true)
-  vc.modalPresentationStyle = .fullScreen
-  self.present(vc, animated: true, completion: nil)
-```
-
+  // qos: background, 로거에서 커스텀 액션을 실행시키는 큐입니다.
+  Logger.queue.async {
+    // optional
+  }
 ```
