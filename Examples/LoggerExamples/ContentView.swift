@@ -6,11 +6,43 @@
 //
 
 import SwiftUI
+import Logger
 
 struct ContentView: View {
     
     var body: some View {
-        Text("Hello world")
+        VStack(spacing: 10) {
+            Button {
+                Logger.debug("debug", action: nil)
+            } label: {
+                Text("Logger.debug")
+            }
+            
+            Button {
+                Logger.error("error", action: nil)
+            } label: {
+                Text("Logger.error")
+            }
+            
+            Button {
+                Logger.event("event", action: nil)
+            } label: {
+                Text("Logger.event")
+            }
+            
+            Button {
+                Logger.header = "Custom Header"
+            } label: {
+                Text("header 변경")
+            }
+            
+            Button {
+                Logger.debug("debug", action: nil)
+            } label: {
+                Text("헤더 변경 후 ")
+            }
+        }
+        
     }
 }
 

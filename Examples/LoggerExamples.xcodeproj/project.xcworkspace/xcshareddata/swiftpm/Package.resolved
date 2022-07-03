@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Logger",
+        "repositoryURL": "https://github.com/BoilerSwift/Logger",
+        "state": {
+          "branch": null,
+          "revision": "c3828682f28156515d17aa87f1be5434e61680d8",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

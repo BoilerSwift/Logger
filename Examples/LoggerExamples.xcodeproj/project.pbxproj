@@ -11,6 +11,7 @@
 		B1C463E4287136F60044E27E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C463E3287136F60044E27E /* ContentView.swift */; };
 		B1C463E6287136F70044E27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C463E5287136F70044E27E /* Assets.xcassets */; };
 		B1C463E9287136F70044E27E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C463E8287136F70044E27E /* Preview Assets.xcassets */; };
+		B1C463F3287152E30044E27E /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = B1C463F2287152E30044E27E /* Logger */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C463F3287152E30044E27E /* Logger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LoggerExamples;
+			packageProductDependencies = (
+				B1C463F2287152E30044E27E /* Logger */,
+			);
 			productName = LoggerExamples;
 			productReference = B1C463DE287136F60044E27E /* LoggerExamples.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B1C463D5287136F50044E27E;
+			packageReferences = (
+				B1C463F1287152E30044E27E /* XCRemoteSwiftPackageReference "Logger" */,
+			);
 			productRefGroup = B1C463DF287136F60044E27E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1C463F1287152E30044E27E /* XCRemoteSwiftPackageReference "Logger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BoilerSwift/Logger";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1C463F2287152E30044E27E /* Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1C463F1287152E30044E27E /* XCRemoteSwiftPackageReference "Logger" */;
+			productName = Logger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B1C463D6287136F50044E27E /* Project object */;
 }
