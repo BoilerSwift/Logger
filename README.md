@@ -3,8 +3,8 @@
 `Logger`는 더 직관적인 디버그 환경을 제공하기 위한 도구입니다.
 
 ### 제작자
-[🏂](https://github.com/jaesung-0o0) 👉 `debug`, `error` <br>
-[🐻‍❄️](https://github.com/lgvv) 👉 `event`
+[🏂](https://github.com/jaesung-0o0)  👉 `debug`, `error` <br>
+[🐻‍❄️](https://github.com/lgvv)  👉 `event`
 
 ## OverView
 <p align="center">
