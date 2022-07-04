@@ -8,7 +8,8 @@
 
 ## OverView
 <p align="center">
-<img width="307" alt="HomeView" src="https://user-images.githubusercontent.com/56182112/176992190-943513c6-27bd-4fac-8f3a-d2dba4fe7f3f.png"><img width="307" alt="DetailView" src="https://user-images.githubusercontent.com/56182112/176992199-c33e27b4-b6be-4d10-afbb-f21662d7cccb.png">
+<img width="712" alt="스크린샷 2022-07-03 오후 1 46 04" src="https://user-images.githubusercontent.com/56182112/177063190-2c47d993-fb8d-4ab2-aa58-03406e22d02c.png">
+
 </p>
 
 ### Supports
