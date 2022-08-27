@@ -141,9 +141,10 @@ public class Logger {
         guard Logger.printableModes.contains(.development) else { return }
         print("[\(header)] [\(time)]\n📡 \(String(describing: log))")
 #else
-        Logger.queue.async {
-            action?()
-        }
+// FIXME: - scheme이 release 모드일 때 빌드가 되지 않는 문제
+//         Logger.queue.async {
+//             action?()
+//         }
         guard Logger.printableModes.contains(.production) else { return }
         print("[\(header)] [\(time)]\n📡 \(String(describing: log))")
 #endif
